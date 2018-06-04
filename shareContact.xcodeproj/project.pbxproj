@@ -3,158 +3,302 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49F8EF8020C5CC760004E5A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8EF7F20C5CC760004E5A4 /* AppDelegate.swift */; };
-		49F8EF8220C5CC760004E5A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8EF8120C5CC760004E5A4 /* ViewController.swift */; };
-		49F8EF8520C5CC760004E5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F8EF8320C5CC760004E5A4 /* Main.storyboard */; };
-		49F8EF8720C5CC780004E5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F8EF8620C5CC780004E5A4 /* Assets.xcassets */; };
-		49F8EF8A20C5CC780004E5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F8EF8820C5CC780004E5A4 /* LaunchScreen.storyboard */; };
+		A9658006B8C91EE9B2FB587D /* Pods_ShareContact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA47F97803C117A7A3E832E /* Pods_ShareContact.framework */; };
+		B819CF722059E3BB0049A4DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819CF712059E3BB0049A4DE /* AppDelegate.swift */; };
+		B819CF742059E3BB0049A4DE /* SocialOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819CF732059E3BB0049A4DE /* SocialOptionsController.swift */; };
+		B819CF772059E3BB0049A4DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B819CF752059E3BB0049A4DE /* Main.storyboard */; };
+		B819CF7C2059E3BC0049A4DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B819CF7A2059E3BC0049A4DE /* LaunchScreen.storyboard */; };
+		B819CF84205A1C4C0049A4DE /* QRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819CF83205A1C4C0049A4DE /* QRCodeController.swift */; };
+		B81CA71B208577BD00654BD4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81CA71A208577BD00654BD4 /* SettingsViewController.swift */; };
+		B8243E23205B30FF00CD2E46 /* ReadQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8243E22205B30FF00CD2E46 /* ReadQRCode.swift */; };
+		B85A75A7206313670083D023 /* oldSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A75A6206313670083D023 /* oldSettingsVC.swift */; };
+		B8A41752205B006A001FCB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A41751205B006A001FCB83 /* Assets.xcassets */; };
+		B8FFE687205B55F200AAF450 /* ConnectAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFE686205B55F200AAF450 /* ConnectAction.swift */; };
+		B8FFE689205B5DCD00AAF450 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFE688205B5DCD00AAF450 /* String+Extension.swift */; };
+		B8FFE68D205B754B00AAF450 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFE68C205B754B00AAF450 /* UserDefaults+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49F8EF7C20C5CC760004E5A4 /* shareContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		49F8EF7F20C5CC760004E5A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49F8EF8120C5CC760004E5A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		49F8EF8420C5CC760004E5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		49F8EF8620C5CC780004E5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49F8EF8920C5CC780004E5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		49F8EF8B20C5CC780004E5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98660D95B209C8C2C125F8AE /* Pods-ShareContact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareContact.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareContact/Pods-ShareContact.release.xcconfig"; sourceTree = "<group>"; };
+		B8015A1B205C36F40044887F /* ShareContact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareContact.entitlements; sourceTree = "<group>"; };
+		B80E9CA42069B14200810B07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B819CF6E2059E3BB0049A4DE /* ShareContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B819CF712059E3BB0049A4DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B819CF732059E3BB0049A4DE /* SocialOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialOptionsController.swift; sourceTree = "<group>"; };
+		B819CF762059E3BB0049A4DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B819CF7B2059E3BC0049A4DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B819CF7D2059E3BC0049A4DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B819CF83205A1C4C0049A4DE /* QRCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeController.swift; sourceTree = "<group>"; };
+		B81CA71A208577BD00654BD4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B8243E22205B30FF00CD2E46 /* ReadQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadQRCode.swift; sourceTree = "<group>"; };
+		B85A75A6206313670083D023 /* oldSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oldSettingsVC.swift; sourceTree = "<group>"; };
+		B8A41751205B006A001FCB83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8FFE686205B55F200AAF450 /* ConnectAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAction.swift; sourceTree = "<group>"; };
+		B8FFE688205B5DCD00AAF450 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B8FFE68C205B754B00AAF450 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		EDA47F97803C117A7A3E832E /* Pods_ShareContact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareContact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1C82D411123128040D5D91 /* Pods-ShareContact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareContact.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareContact/Pods-ShareContact.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49F8EF7920C5CC760004E5A4 /* Frameworks */ = {
+		B819CF6B2059E3BB0049A4DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9658006B8C91EE9B2FB587D /* Pods_ShareContact.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49F8EF7320C5CC760004E5A4 = {
+		0F478654B82B53D1D364A0CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				49F8EF7E20C5CC760004E5A4 /* shareContact */,
-				49F8EF7D20C5CC760004E5A4 /* Products */,
+				B80E9CA42069B14200810B07 /* AVFoundation.framework */,
+				EDA47F97803C117A7A3E832E /* Pods_ShareContact.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		619E465678AB7F2F7AB7E8B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE1C82D411123128040D5D91 /* Pods-ShareContact.debug.xcconfig */,
+				98660D95B209C8C2C125F8AE /* Pods-ShareContact.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B819CF652059E3BB0049A4DE = {
+			isa = PBXGroup;
+			children = (
+				B819CF702059E3BB0049A4DE /* ShareContact */,
+				B819CF6F2059E3BB0049A4DE /* Products */,
+				619E465678AB7F2F7AB7E8B6 /* Pods */,
+				0F478654B82B53D1D364A0CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		49F8EF7D20C5CC760004E5A4 /* Products */ = {
+		B819CF6F2059E3BB0049A4DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49F8EF7C20C5CC760004E5A4 /* shareContact.app */,
+				B819CF6E2059E3BB0049A4DE /* ShareContact.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49F8EF7E20C5CC760004E5A4 /* shareContact */ = {
+		B819CF702059E3BB0049A4DE /* ShareContact */ = {
 			isa = PBXGroup;
 			children = (
-				49F8EF7F20C5CC760004E5A4 /* AppDelegate.swift */,
-				49F8EF8120C5CC760004E5A4 /* ViewController.swift */,
-				49F8EF8320C5CC760004E5A4 /* Main.storyboard */,
-				49F8EF8620C5CC780004E5A4 /* Assets.xcassets */,
-				49F8EF8820C5CC780004E5A4 /* LaunchScreen.storyboard */,
-				49F8EF8B20C5CC780004E5A4 /* Info.plist */,
+				B8015A1B205C36F40044887F /* ShareContact.entitlements */,
+				B819CF712059E3BB0049A4DE /* AppDelegate.swift */,
+				B819CF732059E3BB0049A4DE /* SocialOptionsController.swift */,
+				B819CF83205A1C4C0049A4DE /* QRCodeController.swift */,
+				B8243E22205B30FF00CD2E46 /* ReadQRCode.swift */,
+				B81CA71A208577BD00654BD4 /* SettingsViewController.swift */,
+				B85A75A6206313670083D023 /* oldSettingsVC.swift */,
+				B8FFE686205B55F200AAF450 /* ConnectAction.swift */,
+				B8FFE688205B5DCD00AAF450 /* String+Extension.swift */,
+				B8FFE68C205B754B00AAF450 /* UserDefaults+Extension.swift */,
+				B819CF752059E3BB0049A4DE /* Main.storyboard */,
+				B8A41751205B006A001FCB83 /* Assets.xcassets */,
+				B819CF7A2059E3BC0049A4DE /* LaunchScreen.storyboard */,
+				B819CF7D2059E3BC0049A4DE /* Info.plist */,
 			);
-			path = shareContact;
+			path = ShareContact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49F8EF7B20C5CC760004E5A4 /* shareContact */ = {
+		B819CF6D2059E3BB0049A4DE /* ShareContact */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49F8EF8E20C5CC780004E5A4 /* Build configuration list for PBXNativeTarget "shareContact" */;
+			buildConfigurationList = B819CF802059E3BC0049A4DE /* Build configuration list for PBXNativeTarget "ShareContact" */;
 			buildPhases = (
-				49F8EF7820C5CC760004E5A4 /* Sources */,
-				49F8EF7920C5CC760004E5A4 /* Frameworks */,
-				49F8EF7A20C5CC760004E5A4 /* Resources */,
+				6397C671040E1DA28F363A34 /* [CP] Check Pods Manifest.lock */,
+				B819CF6A2059E3BB0049A4DE /* Sources */,
+				B819CF6B2059E3BB0049A4DE /* Frameworks */,
+				B819CF6C2059E3BB0049A4DE /* Resources */,
+				B337CA505EA4557C0E03A805 /* [CP] Embed Pods Frameworks */,
+				BB3CD19F9F508CEA8FC49EB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = shareContact;
-			productName = shareContact;
-			productReference = 49F8EF7C20C5CC760004E5A4 /* shareContact.app */;
+			name = ShareContact;
+			productName = ShareContact;
+			productReference = B819CF6E2059E3BB0049A4DE /* ShareContact.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		49F8EF7420C5CC760004E5A4 /* Project object */ = {
+		B819CF662059E3BB0049A4DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Andrew Tsukuda";
+				ORGANIZATIONNAME = JCSwifty;
 				TargetAttributes = {
-					49F8EF7B20C5CC760004E5A4 = {
-						CreatedOnToolsVersion = 9.3.1;
+					B819CF6D2059E3BB0049A4DE = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 49F8EF7720C5CC760004E5A4 /* Build configuration list for PBXProject "shareContact" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = B819CF692059E3BB0049A4DE /* Build configuration list for PBXProject "ShareContact" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 49F8EF7320C5CC760004E5A4;
-			productRefGroup = 49F8EF7D20C5CC760004E5A4 /* Products */;
+			mainGroup = B819CF652059E3BB0049A4DE;
+			productRefGroup = B819CF6F2059E3BB0049A4DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49F8EF7B20C5CC760004E5A4 /* shareContact */,
+				B819CF6D2059E3BB0049A4DE /* ShareContact */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		49F8EF7A20C5CC760004E5A4 /* Resources */ = {
+		B819CF6C2059E3BB0049A4DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F8EF8A20C5CC780004E5A4 /* LaunchScreen.storyboard in Resources */,
-				49F8EF8720C5CC780004E5A4 /* Assets.xcassets in Resources */,
-				49F8EF8520C5CC760004E5A4 /* Main.storyboard in Resources */,
+				B819CF7C2059E3BC0049A4DE /* LaunchScreen.storyboard in Resources */,
+				B819CF772059E3BB0049A4DE /* Main.storyboard in Resources */,
+				B8A41752205B006A001FCB83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6397C671040E1DA28F363A34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareContact-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B337CA505EA4557C0E03A805 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShareContact/Pods-ShareContact-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMPaperSwitch/RAMPaperSwitch.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMPaperSwitch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareContact/Pods-ShareContact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3CD19F9F508CEA8FC49EB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShareContact/Pods-ShareContact-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareContact/Pods-ShareContact-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		49F8EF7820C5CC760004E5A4 /* Sources */ = {
+		B819CF6A2059E3BB0049A4DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F8EF8220C5CC760004E5A4 /* ViewController.swift in Sources */,
-				49F8EF8020C5CC760004E5A4 /* AppDelegate.swift in Sources */,
+				B8FFE689205B5DCD00AAF450 /* String+Extension.swift in Sources */,
+				B819CF742059E3BB0049A4DE /* SocialOptionsController.swift in Sources */,
+				B8FFE687205B55F200AAF450 /* ConnectAction.swift in Sources */,
+				B819CF722059E3BB0049A4DE /* AppDelegate.swift in Sources */,
+				B819CF84205A1C4C0049A4DE /* QRCodeController.swift in Sources */,
+				B8FFE68D205B754B00AAF450 /* UserDefaults+Extension.swift in Sources */,
+				B8243E23205B30FF00CD2E46 /* ReadQRCode.swift in Sources */,
+				B85A75A7206313670083D023 /* oldSettingsVC.swift in Sources */,
+				B81CA71B208577BD00654BD4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		49F8EF8320C5CC760004E5A4 /* Main.storyboard */ = {
+		B819CF752059E3BB0049A4DE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				49F8EF8420C5CC760004E5A4 /* Base */,
+				B819CF762059E3BB0049A4DE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		49F8EF8820C5CC780004E5A4 /* LaunchScreen.storyboard */ = {
+		B819CF7A2059E3BC0049A4DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				49F8EF8920C5CC780004E5A4 /* Base */,
+				B819CF7B2059E3BC0049A4DE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +306,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		49F8EF8C20C5CC780004E5A4 /* Debug */ = {
+		B819CF7E2059E3BC0049A4DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -222,7 +366,7 @@
 			};
 			name = Debug;
 		};
-		49F8EF8D20C5CC780004E5A4 /* Release */ = {
+		B819CF7F2059E3BC0049A4DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,73 +411,92 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		49F8EF8F20C5CC780004E5A4 /* Debug */ = {
+		B819CF812059E3BC0049A4DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1C82D411123128040D5D91 /* Pods-ShareContact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareContact/ShareContact.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YTYUD7N245;
-				INFOPLIST_FILE = shareContact/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
+				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ShareContact",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tsukudabuddha.shareContact;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = ShareContact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcswifty.ShareContact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		49F8EF9020C5CC780004E5A4 /* Release */ = {
+		B819CF822059E3BC0049A4DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98660D95B209C8C2C125F8AE /* Pods-ShareContact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareContact/ShareContact.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YTYUD7N245;
-				INFOPLIST_FILE = shareContact/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
+				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ShareContact",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tsukudabuddha.shareContact;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = ShareContact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcswifty.ShareContact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49F8EF7720C5CC760004E5A4 /* Build configuration list for PBXProject "shareContact" */ = {
+		B819CF692059E3BB0049A4DE /* Build configuration list for PBXProject "ShareContact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49F8EF8C20C5CC780004E5A4 /* Debug */,
-				49F8EF8D20C5CC780004E5A4 /* Release */,
+				B819CF7E2059E3BC0049A4DE /* Debug */,
+				B819CF7F2059E3BC0049A4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49F8EF8E20C5CC780004E5A4 /* Build configuration list for PBXNativeTarget "shareContact" */ = {
+		B819CF802059E3BC0049A4DE /* Build configuration list for PBXNativeTarget "ShareContact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49F8EF8F20C5CC780004E5A4 /* Debug */,
-				49F8EF9020C5CC780004E5A4 /* Release */,
+				B819CF812059E3BC0049A4DE /* Debug */,
+				B819CF822059E3BC0049A4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 49F8EF7420C5CC760004E5A4 /* Project object */;
+	rootObject = B819CF662059E3BB0049A4DE /* Project object */;
 }

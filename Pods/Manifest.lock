@@ -1,0 +1,44 @@
+PODS:
+  - IQKeyboardManagerSwift (5.0.8)
+  - KeychainSwift (10.0.0)
+  - Kingfisher (4.6.4)
+  - QRCode (2.0)
+  - QRCodeReader.swift (8.1.1)
+  - RAMPaperSwitch (2.1.0)
+  - SnapKit (4.0.0)
+  - SwiftInstagram (1.1.0):
+    - SwiftInstagram/Core (= 1.1.0)
+  - SwiftInstagram/Core (1.1.0)
+  - SwiftyUserDefaults (3.0.1)
+  - TwitterCore (3.1.0)
+  - TwitterKit (3.3.0):
+    - TwitterCore (>= 3.1.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - KeychainSwift (~> 10.0)
+  - Kingfisher (~> 4.0)
+  - QRCode
+  - QRCodeReader.swift (~> 8.1.1)
+  - RAMPaperSwitch
+  - SnapKit (~> 4.0.0)
+  - SwiftInstagram (~> 1.1.0)
+  - SwiftyUserDefaults
+  - TwitterKit (~> 3.0)
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  KeychainSwift: f9f7910449a0c0fd2cabc889121530dd2c477c33
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  QRCodeReader.swift: b164a681887de276d405ff02bce854d82cd6360b
+  RAMPaperSwitch: ef08af0400a040c9850e09253280deb77510becb
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftInstagram: 90d5c143d8ebe1c790e06a138b8da3c8f2a9ba16
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
+  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
+
+PODFILE CHECKSUM: d514bfa3fa68a4549f6bab85bf49ba22b2dc51cf
+
+COCOAPODS: 1.4.0

@@ -1,23 +1,37 @@
 //
 //  AppDelegate.swift
-//  shareContact
+//  ShareContact
 //
-//  Created by Andrew Tsukuda on 6/4/18.
-//  Copyright © 2018 Andrew Tsukuda. All rights reserved.
+//  Created by Johnathan Chen on 3/14/18.
+//  Copyright © 2018 JCSwifty. All rights reserved.
 //
 
 import UIKit
+import TwitterKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        IQKeyboardManager.sharedManager().enable = true
+        
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"eLGyDcnZh7wgs6mPsUZS4Bhru", consumerSecret:"MTYeboXUGWdTJ8b4JCOGLLHkvcw2bcMaGQxUFrVlJZX6ldIfMG")
+        
         return true
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+
+        // Twitter
+        return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+    
+    }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
